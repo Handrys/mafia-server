@@ -110,6 +110,7 @@ export async function handleDoctorVote(socket, io, client, { targetId }) {
           isHost: p.isHost,
           alive: p.alive,
         })),
+        serverNow: Date.now(),
       });
     };
 

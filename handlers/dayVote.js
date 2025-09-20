@@ -125,6 +125,7 @@ export async function handleDayVote(socket, io, client, { targetId }) {
           isHost: p.isHost,
           alive: p.alive,
         })),
+        serverNow: Date.now(),
       });
     };
 

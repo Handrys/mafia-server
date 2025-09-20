@@ -66,6 +66,7 @@ export async function handleMafiaVote(socket, io, client, { targetId }) {
           isHost: p.isHost,
           alive: p.alive,
         })),
+        serverNow: Date.now(),
       });
     };
     return [roomData, afterCommit];
@@ -100,6 +101,7 @@ export async function handleMafiaVote(socket, io, client, { targetId }) {
           isHost: p.isHost,
           alive: p.alive,
         })),
+        serverNow: Date.now(),
       });
       // (по желанию можно здесь persistDeadline, но ты просил ничего не добавлять сверх необходимого)
     };
