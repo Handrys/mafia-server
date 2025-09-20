@@ -65,6 +65,7 @@ export async function handleStartGame(socket, io, client) {
       isHost: p.isHost,
       alive: p.alive,
     })),
+     serverNow: Date.now(),
   });
 
   // 3. Теперь сообщения с задержкой (только для атмосферы)
